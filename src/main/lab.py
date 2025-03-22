@@ -1,4 +1,4 @@
-def get_user_input_string(prompt):
+def get_user_input_string(name):
     """
     Instead of returning None this method should Get user input as a string.
 
@@ -7,9 +7,9 @@ def get_user_input_string(prompt):
     :param prompt: The prompt to display to the user.
     :return: The string entered by the user.
     """
-    return None # Replace None with your code
+    return input(name) # Replace None with your code
 
-def get_user_input_integer(prompt):
+def get_user_input_integer(age):
     """
     Instead of returning None this method should Get user input as an integer.
     Hint : use input() and  convert it into int data type using int()
@@ -18,12 +18,12 @@ def get_user_input_integer(prompt):
     """
     while True:
         try:
-            return None # Replace None with your code
+            return int(input(age)) # Replace None with your code
         except ValueError:
             print("Invalid input. Please enter an integer.")
 
 
-def get_user_input_float(prompt):
+def get_user_input_float(height):
     """
     Instead of returning None this method should Get user input as a float.
     Hint : use input() and  convert it into float  data type using float()
@@ -34,6 +34,6 @@ def get_user_input_float(prompt):
     """
     while True:
         try:
-            return None # Replace None with your code
+            return float(input(height)) # Replace None with your code
         except ValueError:
             print("Invalid input. Please enter a float.")
